@@ -32,6 +32,7 @@ jobs:
       with:
         node-version: 14.15.4
     - run: node --version
-    - run: cd aws-connect-vm-serverless/
-    - run: npm install --legacy-peer-deps
-    - run: npm build
+    - run:  |
+        cd aws-connect-vm-serverless/
+        npm install --legacy-peer-deps
+        npm build
