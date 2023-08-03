@@ -36,7 +36,8 @@ jobs:
         cd aws-connect-vm-serverless/
         npm install --legacy-peer-deps
         npm run-script build
+        npx serverless package --region us-west-2 --stage prod
         ls
-        cd .serverlss
+        cd .serverless
         ls
         
