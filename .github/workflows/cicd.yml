@@ -36,3 +36,7 @@ jobs:
         cd aws-connect-vm-serverless/
         npm install --legacy-peer-deps
         npm build
+    - run: |
+        cd .dist/aws-connect-vm-serverless/packages
+        ls
+        
